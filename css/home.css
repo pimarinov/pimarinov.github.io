@@ -1,0 +1,81 @@
+#page-wrap {background:#ccc;}
+header#main nav {top:0px; height:64px; background:#000; background:rgba(0,0,0,0.6);}
+header#main li[rel="next"] {width:82px; height:64px;}
+header#main li[rel="next"] a:not(.active) {position:relative; top: 32px; height:62px; width:62px; box-sizing:border-box; padding: 20px 10px 0px; margin:0px 12px; border-radius:32px;
+    background: #2196F3; color:#fff; /* background:#fff; color:#1e90ff;*/
+    -webkit-filter: drop-shadow(0 0px 2px rgba(255,255,255,.5));
+    /*filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: url(/add/img/drop-shadow.svg#dropshadow);*/
+}
+header#main li[rel="next"] a:not(.active):hover {background: #2962FF; color:#fff;
+    -moz-transition:background 0.3s ease;
+	-o-transition:background 0.3s ease;
+	-webkit-transition:background 0.3s ease;
+	transition:background 0.3s ease;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,.8));
+    -webkit-filter: drop-shadow(0 1px 2px rgba(77, 166, 255,.6));
+    filter: drop-shadow(0 1px 2px rgba(77, 166, 255,.6));
+}
+header#main li[rel="next"] a:not(.active) i {vertical-align:top;}
+
+#page-bg {position:absolute; top:0px; left: 0px; width:100%; height:100%; margin-bottom:-100%; box-sizing:border-box; overflow:hidden; background: #fff url(/img/laptop-hd.jpg) no-repeat center; background-size: cover;
+     -webkit-animation: background 1s ease-in .1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: background 1s ease-in .1s; /* Firefox < 16 */
+        -ms-animation: background 1s ease-in .1s; /* Internet Explorer */
+         -o-animation: background 1s ease-in .1s; /* Opera < 12.1 */
+            animation: background 1s ease-in .1s;
+}
+
+#slogan img {width:100%;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    cursor:default;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*@media screen and (min-width: 35.5em){} */
+@media screen and (min-width: 48em){
+    #slogan {position:absolute; right:40px; width:53%; height:28vh; background-position: center; margin:0px;}
+}
+@media screen and (min-width: 64em){
+    #slogan {position:absolute; right:80px; width:50%; height:28vh; background-position: center; margin:0px;}
+    #slogan img {position: relative;
+    top: 50%;
+    transform: translateY(-50%);}
+}
+/*@media screen and (min-width: 80em){}*/
+/* End Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes background {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes background {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes background {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes background {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes background {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
