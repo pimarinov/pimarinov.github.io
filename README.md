@@ -1,2 +1,1 @@
-# pimarinov.github.io
-My personal site attempt
+# [pimarinov.com](https://pimarinov.com)
