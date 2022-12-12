@@ -32,7 +32,7 @@
     <div class="container">
         <h1>
             <a href="/" id="home-lnk">
-                pimarinov <!--i class="material-icons md-36">chevron_left</i><i class="material-icons md-36">chevron_right</i-->
+                PIMarinov <!--i class="material-icons md-36">chevron_left</i><i class="material-icons md-36">chevron_right</i-->
             </a>
         </h1>
         <div id="header-spacer"> </div>
@@ -73,6 +73,6 @@
 <footer id="ftr-main"><div class="content"><div class="container">
     <a href="https://pimarinov.com/"><h2>pimarinov<!--&lt;&gt;--></h2><em>.com</em></a>
     <div id="footer-spacer"> </div>
-    <p>&copy; 2001-2022</p>
+    <p>&copy; 2001-<span id="year"></span></p><script>document.getElementById("year").innerHTML += new Date().getFullYear();</script>
 </div></div></footer>
 </body></html>
